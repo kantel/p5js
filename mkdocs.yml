@@ -1,0 +1,18 @@
+site_name: P5.js lernen
+theme: readthedocs
+
+pages:
+- Home: "index.md"
+- Zweite Seite: "secondpage.md"
+
+markdown_extensions:
+- footnotes
+- smarty:
+    smart_quotes: False
+
+repo_url: https://github.com/kantel/p5js
+edit_uri: blob/master/docs
+
+site_dir: "/Applications/MAMP/htdocs/p5js"
+
+extra_css: [css/user.css]
