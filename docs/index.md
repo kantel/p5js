@@ -1,4 +1,4 @@
-# Cognitiones Privatae
+# Startseite
 
 ![Silo](images/silo.gif)
 
@@ -20,7 +20,7 @@ Hallo Welt. Das wird vielleicht einmal Euer ganz privater Evernote-Ersatz mit Mk
 
 ## (Live-) Server starten
 
-~~~bash
+~~~{bash}
 cd ~/git/p5js
 mkdocs serve
 ~~~

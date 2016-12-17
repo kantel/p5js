@@ -3,7 +3,9 @@ theme: readthedocs
 
 pages:
 - Home: "index.md"
-- Zweite Seite: "secondpage.md"
+- Erste Schritte: "firststeps.md"
+- P5.js in eine HTML-Seite einbinden: "p5standalone.md"
+- P5.js und RubyFrontier: "p5rubyfrontier.md"
 
 markdown_extensions:
 - footnotes
@@ -16,3 +18,8 @@ edit_uri: blob/master/docs
 site_dir: "/Applications/MAMP/htdocs/p5js"
 
 extra_css: [css/user.css]
+
+extra_javascript:
+    - js/p5.min.js
+    - js/p5.dom.min.js
+    - js/p5.sound.min.js
