@@ -64,6 +64,10 @@ Jeder Canvas ist als ein eigenes Objekt (`s` und `t`) realisiert. Wichtig ist ei
 
 Genau so habe ich das auch auf dieser Seite eingebunden und wie man P5.js mit RubyFrontier verbandelt, habe ich in einer Worknote [hier erklärt][9].
 
+## Reihenfolge beachten
+
+Bei dieser Art der Erzeugung zweier P5-Instanzen ist es wichtig, daß `p5.js` oder `p5.min.js` *vor* dem eigentlichen Skript geladen werden, weil sonst, da JavaScript asynchron ausgeführt, das Objekt `p5` nicht gefunden wird. 
+
 ## Caveat
 
 Ich bin mir allerdings nicht sicher, wie sinnvoll es ist, mehr als einen Canvas auf einer Seite zu implementieren. Die beiden doch recht simplen Beispielskripte laden schon recht lange, wenn man komplexere und längere Skripte nutzt, wird dies das Laden der Webseite vermutlich doch arg verzögern.
