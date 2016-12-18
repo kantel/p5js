@@ -5,7 +5,14 @@ pages:
 - Home: "index.md"
 - Erste Schritte: "firststeps.md"
 - P5.js in eine HTML-Seite einbinden: "p5standalone.md"
-- P5.js und RubyFrontier: "p5rubyfrontier.md"
+- Running Orc: "runningorc.md"
+- Spieleprogrammierung 1: "spieleprogrammierung01.md"
+- Spieleprogrammierung 2: "spieleprogrammierung02.md"
+- Spaß mit Emojis: "p5emoji.md"
+- Anhänge:
+    - P5.js und RubyFrontier: "p5rubyfrontier.md"
+    - RubyFrontier als P5.js-IDE: "p5rubyfrontieride.md"
+    - Zwei Canvases mit P5.js: "p52canvases.md"
 
 markdown_extensions:
 - footnotes
