@@ -31,7 +31,7 @@ var easing = 0.01;
 	y += (targetY - y)*easing;
 ~~~
 
-folgt der Geist mit einer gewissen Verzögerung dem Mauszeiger. Die Variable `easing` sollte zwischen 0 und 1 liegen. Je kleiner der Wert ist, desto größer ist die Verzögerung. Umgekehrt gilt natürlich: Je größer der Wert von `easing` ist, desto schneller folgt das Gespenst dem Mauszeiger. Liegt der Wert gar bei 1, gibt es gar keine Verzögerung mehr. Ihr könnt ruhig mit dem Wer von `easig` herumspielen, um ein Gefühl für die Verzögerung zu bekommen.
+folgt der Geist mit einer gewissen Verzögerung dem Mauszeiger. Die Variable `easing` sollte zwischen 0 und 1 liegen. Je kleiner der Wert ist, desto größer ist die Verzögerung. Umgekehrt gilt natürlich: Je größer der Wert von `easing` ist, desto schneller folgt das Gespenst dem Mauszeiger. Liegt der Wert gar bei 1, gibt es gar keine Verzögerung mehr. Ihr könnt ruhig mit dem Wert von `easing` herumspielen, um ein Gefühl für die Verzögerung zu bekommen.
 
 Natürlich soll der Geist des Mönches die Abtei nicht verlassen können. Dafür habe ich einfach mit
 
