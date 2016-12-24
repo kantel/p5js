@@ -2,7 +2,7 @@
 
 ![Silo](images/silo.gif)
 
-Hallo Welt. Das wird vielleicht einmal Euer ganz privater Evernote-Ersatz mit MkDocs, Markdown, Live-Server und/oder statischen Seiten gelingt die Flucht aus aus den Datensilos!
+P5.js lernen. Weil JavaScript das nächste große Ding ist!
 
 ## Commands
 
