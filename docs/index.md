@@ -1,6 +1,6 @@
 # Startseite
 
-![Silo](images/silo.gif)
+![Silo](images/orc.png)
 
 P5.js lernen. Weil JavaScript das nächste große Ding ist!
 
