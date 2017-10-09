@@ -1,9 +1,11 @@
 site_name: P5.js lernen
 theme: readthedocs
+dev_addr: 127.0.0.1:9030
 
 pages:
 - Home: "index.md"
 - Erste Schritte: "firststeps.md"
+- Klassen in ES 6: "classes.md"
 - P5.js in eine HTML-Seite einbinden: "p5standalone.md"
 - Running Orc: "runningorc.md"
 - Spieleprogrammierung 1: "spieleprogrammierung01.md"
