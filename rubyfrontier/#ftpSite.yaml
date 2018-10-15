@@ -1,0 +1,6 @@
+--- 
+:folder: /Applications/MAMP/htdocs/p5js
+:method: file
+:isLocal: true
+:apacheSite: /Applications/MAMP/htdocs/p5js
+:apacheURL: http://localhost:8888/p5js/

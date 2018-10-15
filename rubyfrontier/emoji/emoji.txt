@@ -1,0 +1,4 @@
+#title "First Emojis With P5"
+#linkjavascripts ["emoji"]
+
+<div id="myCanvas"></div>

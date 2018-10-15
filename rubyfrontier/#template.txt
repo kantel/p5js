@@ -1,0 +1,3 @@
+<%= pageheader() %>
+	<p id="bodytext"></p>
+<%= pagefooter() %>
