@@ -1,0 +1,7 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+  padding: 25px;
+  margin: 5px;
+}
