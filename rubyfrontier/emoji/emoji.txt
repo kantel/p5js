@@ -4,3 +4,5 @@
 ## Spaß mit p5.js und Emojis
 
 <div id="myCanvas"></div>
+
+Mal ein bißchen mit CSS herumgespielt.
