@@ -5,4 +5,4 @@
 
 <div id="myCanvas"></div>
 
-Mal ein bißchen mit CSS herumgespielt.
+Mal ein *bißchen* mit **CSS** herumgespielt. Und das ist ***fettkursiv***. Dabei ist **fett***kursiv* eigentlich **verboten**!
