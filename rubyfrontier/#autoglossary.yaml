@@ -22,6 +22,6 @@ rogue: &2
   :path: !ruby/object:Pathname
     path: rogue/rogue.html
   :adr: !ruby/object:Pathname
-    path: /Users/admin/git/p5js/rubyfrontier/rogue/rogue.txt
+    path: /Users/kantel/git/p5js/rubyfrontier/rogue/rogue.txt
   :linetext: Rogue with P5 (1)
 rogue with p5 (1): *2

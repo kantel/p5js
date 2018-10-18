@@ -25,18 +25,14 @@ function draw() {
     }
 }
 
-function keyTyped() {
-	if (keyIsDown(LEFT_ARROW) && posx > 0) {
-		posx -= 16
-	}
-	if (keyIsDown(RIGHT_ARROW) && posx < width - 16) {
-		posx += 16
-	}
-	if (keyIsDown(UP_ARROW) && posy > 0) {
-		posy -= 16
-	}
-	if (keyIsDown(DOWN_ARROW) && posy < height - 16) {
-		posy += 16
-	}
-
+function keyPressed() {
+    if ((keyCode === LEFT_ARROW) && (posx > 0)) {
+        posx = posx - 16;  // nach links
+    } else if ((keyCode === RIGHT_ARROW) && (posx < width-16)) {
+        posx = posx + 16;  // nach rechts
+    } else if ((keyCode === UP_ARROW) && (posy > 0)) {
+        posy = posy - 16;  // nach oben
+    } else if ((keyCode === DOWN_ARROW) && (posy < height-16)) {
+        posy = posy + 16; // nach unten
+    }
 }
