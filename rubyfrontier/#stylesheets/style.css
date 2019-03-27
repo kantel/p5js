@@ -30,6 +30,12 @@ h3 {
 	font-size: 1.1em;
 }
 
+code, pre {
+	font-family: "Courier New", monospace;
+	color: #ff0000;
+	background: #cccccc;
+}
+
 #myCanvas canvas {
 	/* width: auto!important;
 	height: auto!important; */

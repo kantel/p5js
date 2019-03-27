@@ -26,13 +26,13 @@ function draw() {
 }
 
 function keyPressed() {
-    if ((keyCode === LEFT_ARROW) && (posx > 0)) {
+    if (((key === "a") || (key === "4")) && (posx > 0)) {
         posx = posx - 16;  // nach links
-    } else if ((keyCode === RIGHT_ARROW) && (posx < width-16)) {
+    } else if (((key === "d") || (key === "6")) && (posx < width-16)) {
         posx = posx + 16;  // nach rechts
-    } else if ((keyCode === UP_ARROW) && (posy > 0)) {
+    } else if (((key === "w") || (key === "8")) && (posy > 0)) {
         posy = posy - 16;  // nach oben
-    } else if ((keyCode === DOWN_ARROW) && (posy < height-16)) {
+    } else if (((key === "s") || (key === "5")) && (posy < height-16)) {
         posy = posy + 16; // nach unten
     }
 }

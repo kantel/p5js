@@ -3,25 +3,20 @@ firssteps: &1
   :path: !ruby/object:Pathname
     path: firststep/firssteps.html
   :adr: !ruby/object:Pathname
-    path: /Users/kantel/git/p5js/rubyfrontier/firststep/firssteps.txt
+    path: "/Users/admin/git/p5js/rubyfrontier/firststep/firssteps.txt"
   :linetext: First Steps With P5
 first steps with p5: *1
-emoji:
+emoji: &2
   :path: !ruby/object:Pathname
     path: emoji/emoji.html
   :adr: !ruby/object:Pathname
-    path: /Users/admin/git/p5js/rubyfrontier/emoji/emoji.txt
+    path: "/Users/admin/git/p5js/rubyfrontier/emoji/emoji.txt"
   :linetext: First Emojis With P5
-first emojis with p5:
+first emojis with p5: *2
+rogue: &3
   :path: !ruby/object:Pathname
     path: rogue/rogue.html
   :adr: !ruby/object:Pathname
-    path: /Users/admin/git/p5js/rubyfrontier/rogue/rogue.txt
-  :linetext: First Emojis With P5
-rogue: &2
-  :path: !ruby/object:Pathname
-    path: rogue/rogue.html
-  :adr: !ruby/object:Pathname
-    path: /Users/kantel/git/p5js/rubyfrontier/rogue/rogue.txt
+    path: "/Users/admin/git/p5js/rubyfrontier/rogue/rogue.txt"
   :linetext: Rogue with P5 (1)
-rogue with p5 (1): *2
+rogue with p5 (1): *3

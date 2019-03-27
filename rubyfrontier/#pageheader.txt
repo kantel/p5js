@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width">
 	<%= linkstylesheets() %>
 	<%= linkjavascripts() %>
-	<title><%= sitetitle %>: <%= title %></title>
+	<title><%= title %> – <%= sitetitle %></title>
 </head>
 
 <%= bodytag() %>

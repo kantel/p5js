@@ -1,9 +1,16 @@
 #title "Rogue with P5 (1)"
 #linkjavascripts ["rogue"]
 
-# Pfeiltasten und Firefox
+<% imageref("rogue0") %>
+<% imageref("rogue1") %>
+
+# Pfeiltasten und der Browser
 
 <div id="myCanvas"></div>
 
-**So** scheint es zu *funktionieren!*
+**So** scheint es zu *funktionieren!* -- zumindest, solange die Seite komplett ohne Scrollbalken in das Browserfenster paßt. Andernfalls funkt der Browser dazwischen und will zuerst nach unten oder oben scrollen.
+
+Wenn man jedoch statt der Pfeiltasten auf das traditionelle `w` (oben), `a` (links), `s` (unten) und `d` (rechts) ausweicht, hat man diese Probleme nicht mehr.
+
+Oder man überlegt sich eine reine Maussteuerung, da scheinen die Browser bisher nicht dazwischenzufunken.
 
