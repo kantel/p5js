@@ -1,8 +1,8 @@
 <script src="js/p5.min.js" type="text/javascript" ></script>
 
-# p5.js und MacDown
+# P5.js und MacDown
 
-Kann man p5.js-Scripte interaktiv in MacDown ausführen lassen? Ja, man kann!
+Kann man P5.js-Scripte interaktiv in MacDown ausführen lassen? Ja, man kann!
 
 <script type="text/javascript">
 function setup() {
@@ -20,7 +20,7 @@ function draw() {
 
 <div id="animation1130"></div>
 
-Diesen Quellcode hab ich in einem Skripttag eingebunden und zuvor p5.min.js geladen.
+Diesen Quellcode hab ich in einem Skripttag eingebunden und zuvor `p5.min.js` geladen.
 
 ~~~javascript
 function setup() {

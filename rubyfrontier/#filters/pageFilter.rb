@@ -2,8 +2,9 @@ def pageFilter(adrPageTable)
   # adrPageTable[:bodytext] = process(adrPageTable[:bodytext])
   # kramdown
   if adrPageTable[:kramdown]
+    # Coderay
     adrPageTable[:bodytext] = Kramdown::Document.new(adrPageTable[:bodytext],
-    :auto_ids => false, :entity_output => :numeric).to_html.gsub("&quot;", '"')
+    :auto_ids => false, :entity_output => :numeric, :coderay_line_numbers => nil).to_html.gsub("&quot;", '"')
   # but kramdown also substitutes &lt;% for <% and %&gt; for %>, so if we have macros they've just been stripped
     adrPageTable[:bodytext] = adrPageTable[:bodytext].gsub("&lt;%", "<%")
     adrPageTable[:bodytext] = adrPageTable[:bodytext].gsub("%&gt;", "%>")
