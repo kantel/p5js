@@ -9,8 +9,8 @@ let ball;
 
 function setup() {
 	var myCanvas = createCanvas(560, 315);
-	myCanvas.parent("bouncingball")
-	ball = new Ball(200, 200, 40);
+	myCanvas.parent("bouncingball");
+	ball = new Ball(200, 200, 40 (255, 0, 0));
 }
 
 function draw() {
@@ -21,20 +21,27 @@ function draw() {
 
 class Ball {
 
-    constructor(x, y, r) {
+    constructor(x, y, r, c) {
         this.x = x;
         this.y = y;
         this.r = r;
+        this.c = c;
+        this.dy = 0;
+        this.gravity = 0.1;
     }
     
     move() {
-        this.x = this.x + random(-5, 5);
-        this.y = this.y + random(-5, 5);
-    }
+        this.dy = this.dy + this.gravity;
+        this.y = this.y + this.dy;
+        if (this.y <= 560) {
+            this.dy = this.dy * -1;
+            this.y = 560;
+        }
+}
     
     show() {
         noStroke();
-        fill(255, 0, 0);
+        fill(this.c);
         circle(this.x, this.y, this.r);
     }
 }
