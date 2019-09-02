@@ -20,3 +20,10 @@ rogue: &3
     path: "/Users/admin/git/p5js/rubyfrontier/rogue/rogue.txt"
   :linetext: Rogue with P5 (1)
 rogue with p5 (1): *3
+bouncingball: &4
+  :path: !ruby/object:Pathname
+    path: bouncingball/bouncingball.html
+  :adr: !ruby/object:Pathname
+    path: "/Users/admin/git/p5js/rubyfrontier/bouncingball/bouncingball.txt"
+  :linetext: BouncingBall With P5
+bouncingball with p5: *4
