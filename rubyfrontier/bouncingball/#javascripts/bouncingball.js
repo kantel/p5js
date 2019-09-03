@@ -1,20 +1,20 @@
 let balls = [];
-let numOfBalls = 30
+const numOfBalls = 30
 
 function setup() {
 	var myCanvas = createCanvas(640, 360);
 	myCanvas.parent("myCanvas");
-	for (i = 0; i < numOfBalls; i++) {
+	for (let i = 0; i < numOfBalls; i++) {
 		balls.push(new Ball());
 	}
 }
 
 function draw() {
 	background("#2b3e50");
-	for (i = 0; i < numOfBalls; i++) {
-		balls[i].checkEdges();
-		balls[i].move();
-		balls[i].show();
+	for (let ball of balls) {
+		ball.checkEdges();
+		ball.move();
+		ball.show();
 	}
 }
 
@@ -26,7 +26,7 @@ class Ball {
 		let y = random(this.r, height - this.r);
 		this.loc = createVector(x, y);
 		let velx = random(-3, 3);
-		let vely = random(3, 3);
+		let vely = random(-3, 3);
 		this.vel = createVector(velx, vely);
 		// Farben
 		let a = 200;  // Alpha
