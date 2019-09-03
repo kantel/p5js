@@ -2,7 +2,7 @@ let balls = [];
 const numOfBalls = 30
 
 function setup() {
-	var myCanvas = createCanvas(640, 360);
+	let myCanvas = createCanvas(640, 360);
 	myCanvas.parent("myCanvas");
 	for (let i = 0; i < numOfBalls; i++) {
 		balls.push(new Ball());
@@ -29,8 +29,8 @@ class Ball {
 		let vely = random(-3, 3);
 		this.vel = createVector(velx, vely);
 		// Farben
-		let a = 200;  // Alpha
-		let colors = [color(230, 96, 55, a), color(17, 42, 106, a),
+		const a = 200;  // Alpha
+		const colors = [color(230, 96, 55, a), color(17, 42, 106, a),
                   color(183, 116, 64, a), color(212, 251, 69, a),
                   color(252, 75, 200, a), color(159, 53, 233, a),
                   color(57, 218, 56, a), color(67, 253, 133, a),
