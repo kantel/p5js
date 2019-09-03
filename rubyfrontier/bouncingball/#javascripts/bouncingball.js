@@ -36,7 +36,7 @@ class Ball {
                   color(57, 218, 56, a), color(67, 253, 133, a),
                   color(78, 148, 42, a), color(67, 254, 211, a),
                   color(74, 143, 186, a), color(52, 99, 234, a)]
-			this.c = random(colors);
+		this.c = random(colors);
     }
     
     move() {
