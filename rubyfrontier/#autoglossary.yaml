@@ -27,3 +27,10 @@ bouncingball: &4
     path: "/Users/admin/git/p5js/rubyfrontier/bouncingball/bouncingball.txt"
   :linetext: BouncingBall With P5
 bouncingball with p5: *4
+sidescroller1: &5
+  :path: !ruby/object:Pathname
+    path: sidescroller/sidescroller1.html
+  :adr: !ruby/object:Pathname
+    path: "/Users/admin/git/p5js/rubyfrontier/sidescroller/sidescroller1.txt"
+  :linetext: A Basic Sidescroller (1)
+a basic sidescroller (1): *5

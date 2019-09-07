@@ -1,0 +1,6 @@
+#title "A Basic Sidescroller (1)"
+#linkjavascripts ["backgrounds", "sidescroller"]
+
+## <%= title %>
+
+<div id="myCanvas"></div>
