@@ -1,6 +1,8 @@
 #title "A Basic Sidescroller (1)"
-#linkjavascripts ["backgrounds", "sidescroller"]
+#linkjavascripts ["sidescroller"]
 
 ## <%= title %>
 
 <div id="myCanvas"></div>
+
+<% imageref("alienwalk1") %><% imageref("alienwalk2") %><% imageref("alienjumps") %>
