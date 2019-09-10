@@ -1,7 +1,7 @@
 // Sidescroller 1
 
-const aliens = []
-const clouds = []
+const aliens = [];
+const clouds = [];
 const bighills = [];
 const smallhills = [];
 
