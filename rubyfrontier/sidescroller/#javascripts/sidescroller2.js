@@ -1,14 +1,19 @@
-// Sidescroller 1
+// Sidescroller 2
 
 const aliens = [];
+const obstacles = [];
 const clouds = [];
 const bighills = [];
 const smallhills = [];
+const obstacleWidth = 70;
 
 function preload() {
-	alienwalk1 = loadImage("images/alienwalk1.png");
-	alienwalk2 = loadImage("images/alienwalk2.png");
-	alienjumps = loadImage("images/alienjumps.png");
+	alienwalk1  = loadImage("images/alienwalk1.png");
+	alienwalk2  = loadImage("images/alienwalk2.png");
+	alienjumps  = loadImage("images/alienjumps.png");
+	cactus      = loadImage("images/cactus.png");
+	fence       = loadImage("images/fence.png");
+	fencebroken = loadImage("images/fenceBroken.png");
 }
 
 function setup() {
@@ -21,6 +26,7 @@ function setup() {
 	for (let i = 0; i < 6; i++) {
 		smallhills.push(new Hill(i*200, 100, -0.75, "#217424"));
 	}
+	obstacles.push(new Obstacle(width + obstacleWidth, 340))
 	aliens.push(new Alien(66, 320));
 	noStroke();
 }
@@ -45,6 +51,11 @@ function draw() {
 	// Erdboden
 	fill("#ffd05e");
 	rect(0, 400, width, 50)
+	// Obstacles
+	for (let obstacle of obstacles) {
+		obstacle.update();
+		obstacle.show();
+	}
 	// Alien
 	for (let alien of aliens) {
 		alien.update();
@@ -55,14 +66,14 @@ function draw() {
 function keyPressed() {
 	let alien = aliens[0];
 	if (((keyCode === UP_ARROW) || (key === " ")) && (alien.status == "walking")) {
-		alien.vely = -6;
+		alien.vely = -5;
 		alien.status = "jumping";
 	}
 	return false;
 }
 
 function touchStarted() {
-	alien.vely = -6;
+	alien.vely = -5;
 	alien.status = "jumping";
 	return false;
 }
@@ -154,7 +165,37 @@ class Alien {
 				this.status = "walking";
 				this.vely = 0;
 			}
-			// console.log(this.ypos)
 		}
 	}
+}
+
+// Obstacles
+
+class Obstacle {
+	
+	constructor(x, y) {
+		this.xpos = x;
+		this.ypos = y;
+		this.im1 = fence;
+		this.im2 = fencebroken;
+		this.im = this.im1;
+		this.step = -2.5;
+	}
+	
+	update() {
+		this.xpos += this.step;
+		if (this.xpos <= -(obstacleWidth + random(240*obstacleWidth))) {
+			if (random() < 0.75) {
+				this.im = this.im1;
+			} else {
+				this.im = this.im2;
+			}
+			this.xpos = width + obstacleWidth;
+		}
+	}
+	
+	show() {
+		image(this.im, this.xpos, this.ypos);
+	}
+
 }

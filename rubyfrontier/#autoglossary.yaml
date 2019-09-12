@@ -34,3 +34,10 @@ sidescroller1: &5
     path: "/Users/admin/git/p5js/rubyfrontier/sidescroller/sidescroller1.txt"
   :linetext: A Basic Sidescroller (1)
 a basic sidescroller (1): *5
+sidescroller2: &6
+  :path: !ruby/object:Pathname
+    path: sidescroller/sidescroller2.html
+  :adr: !ruby/object:Pathname
+    path: "/Users/admin/git/p5js/rubyfrontier/sidescroller/sidescroller2.txt"
+  :linetext: A Basic Sidescroller (2)
+a basic sidescroller (2): *6
