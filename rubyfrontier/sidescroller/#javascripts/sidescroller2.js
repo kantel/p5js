@@ -69,12 +69,19 @@ function keyPressed() {
 		alien.vely = -5;
 		alien.status = "jumping";
 	}
+	// Für Screenshots
+	else if (key === "s") {
+		noLoop();
+	}
 	return false;
 }
 
 function touchStarted() {
-	alien.vely = -5;
-	alien.status = "jumping";
+	let alien = aliens[0];
+	if (alien.status == "walking") {
+		alien.vely = -5;
+		alien.status = "jumping";
+	}
 	return false;
 }
 
