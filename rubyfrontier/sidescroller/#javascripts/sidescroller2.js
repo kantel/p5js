@@ -21,10 +21,10 @@ function setup() {
 	myCanvas.parent("myCanvas");
 	clouds.push(new Cloud(700, -0.25));
 	for (let i = 0; i < 3; i++) {
-		bighills.push(new Hill(i*400, 200, -0.5, "#63e06b"));
+		bighills.push(new Hill(i*400, 200, -0.5, "#c666e6"));
 	}
 	for (let i = 0; i < 6; i++) {
-		smallhills.push(new Hill(i*200, 100, -0.75, "#217424"));
+		smallhills.push(new Hill(i*200, 100, -0.75, "#9757a5"));
 	}
 	obstacles.push(new Obstacle(width + obstacleWidth, 340))
 	aliens.push(new Alien(66, 320));
@@ -32,7 +32,7 @@ function setup() {
 }
 
 function draw() {
-	background(64, 176, 226);
+	background("#95e0f5");
 	// Langsame Wolke ganz im Hintergrund
 	for (let cloud of clouds) {
 		cloud.update();
@@ -49,7 +49,7 @@ function draw() {
 		smallhill.show();
 	}
 	// Erdboden
-	fill("#ffd05e");
+	fill("#817ac6");
 	rect(0, 400, width, 50)
 	// Obstacles
 	for (let obstacle of obstacles) {
