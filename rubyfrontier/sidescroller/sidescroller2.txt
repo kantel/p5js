@@ -1,5 +1,5 @@
-#title "A Basic Sidescroller (2)"
-#linkjavascripts ["sidescroller2"]
+#title "A Basic Sidescroller (3)"
+#linkjavascripts ["sidescroller3"]
 
 ## <%= title %>
 

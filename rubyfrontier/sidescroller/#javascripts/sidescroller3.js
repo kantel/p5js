@@ -98,14 +98,15 @@ class Cloud {
 	
 	update() {
 		this.xpos += this.step;
-		if (this.xpos <= -200) {
-			this.xpos = width + 200;
+		if (this.xpos <= -300) {
+			this.xpos = width + 100;
 		}
 	}
 	
 	show() {
-		fill("#ff0000");
-		arc(this.xpos, this.xpos, this.ypos, this.ypos, PI, TWO_PI);
+		fill("#ffffff");
+		arc(this.xpos, this.ypos, 200, 200, PI, TWO_PI);
+		arc(this.xpos + 150, this.ypos, 150, 150, PI, TWO_PI);
 	}
 }
 
