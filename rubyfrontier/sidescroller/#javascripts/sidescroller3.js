@@ -82,7 +82,7 @@ function touchStarted() {
 		alien.vely = -5;
 		alien.status = "jumping";
 	}
-	return false;
+	// return false;
 }
 
 // Hintergrund-Objekte

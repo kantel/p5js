@@ -1,4 +1,4 @@
-#title "A Basic Sidescroller (3)"
+#title "A Basic Sidescroller (2)"
 #linkjavascripts ["sidescroller3"]
 
 ## <%= title %>
