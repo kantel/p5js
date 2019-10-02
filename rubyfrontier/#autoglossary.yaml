@@ -47,3 +47,10 @@ a basic sidescroller (3):
   :adr: !ruby/object:Pathname
     path: "/Users/admin/git/p5js/rubyfrontier/sidescroller/sidescroller2.txt"
   :linetext: A Basic Sidescroller (3)
+video1: &7
+  :path: !ruby/object:Pathname
+    path: video1/video1.html
+  :adr: !ruby/object:Pathname
+    path: "/Users/admin/git/p5js/rubyfrontier/video1/video1.txt"
+  :linetext: Video-Wiedergabe in P5 (JavaScript)
+video-wiedergabe in p5 (javascript): *7
