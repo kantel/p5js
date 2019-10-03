@@ -16,6 +16,7 @@ function mousePressed() {
 
 function draw() {
 	background(0);
-	tint(250, 0, 100);
+	let v = mouseX/width;
 	image(movie, 0, 0);
+	filter(THRESHOLD, v);
 }
