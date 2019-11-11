@@ -1,0 +1,6 @@
+#title "Rectangle Collision Detection mit P5"
+#linkjavascripts ["colldectrect"]
+
+## Rectangle Collision Detection mit P5.js
+ 
+<div id="myCanvas"></div>
