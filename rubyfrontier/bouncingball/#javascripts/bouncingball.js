@@ -21,7 +21,7 @@ function draw() {
 class Ball {
 
     constructor() {
-        this.r = random(7, 15);
+    this.r = random(7, 15);
 		let x = random(this.r, width - this.r);
 		let y = random(this.r, height - this.r);
 		this.loc = createVector(x, y);
