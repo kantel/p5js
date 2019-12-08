@@ -68,3 +68,10 @@ colldectrect: &9
     path: "/Users/admin/git/p5js/rubyfrontier/colldectrect/colldectrect.txt"
   :linetext: Rectangle Collision Detection mit P5
 rectangle collision detection mit p5: *9
+sidescroller4: &10
+  :path: !ruby/object:Pathname
+    path: sidescroller/sidescroller4.html
+  :adr: !ruby/object:Pathname
+    path: "/Users/admin/git/p5js/rubyfrontier/sidescroller/sidescroller4.txt"
+  :linetext: A Basic Sidescroller (4)
+a basic sidescroller (4): *10

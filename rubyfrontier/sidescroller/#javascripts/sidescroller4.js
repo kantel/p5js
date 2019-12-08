@@ -6,6 +6,7 @@ const clouds = [];
 const bighills = [];
 const smallhills = [];
 const obstacleWidth = 70;
+let score = 0;
 
 function preload() {
 	alienwalk1  = loadImage("images/alienwalk1.png");
@@ -33,6 +34,8 @@ function setup() {
 
 function draw() {
 	background("#95e0f5");
+  // Score
+  drawScore();
 	// Langsame Wolke ganz im Hintergrund
 	for (let cloud of clouds) {
 		cloud.update();
@@ -57,10 +60,9 @@ function draw() {
 		obstacle.show();
 	}
 	// Alien
-	for (let alien of aliens) {
-		alien.update();
-		alien.show();
-	}
+  let alien = aliens[0];
+	alien.update();
+	alien.show();
 }
 
 function keyPressed() {
@@ -83,6 +85,12 @@ function touchStarted() {
 		alien.status = "jumping";
 	}
 	// return false;
+}
+
+function drawScore() {
+  textSize(32);
+  fill(255, 255, 255);
+  text("Score: " + score, 20, 36);
 }
 
 // Hintergrund-Objekte
@@ -143,6 +151,7 @@ class Alien {
 		this.im1 = alienwalk1;
 		this.im2 = alienwalk2;
 		this.im3 = alienjumps;
+    this.im = this.im1
 		this.count = 0;
 		this.vely = 0;
 	}
@@ -160,19 +169,20 @@ class Alien {
 				this.count = 0;
 			}
 			if (this.count < 8) {
-				image(this.im1, this.xpos, this.ypos);
+        this.im = this.im1;
 			} else {
-				image(this.im2, this.xpos, this.ypos);
+        this.im = this.im2;
 			}
 		} else if (this.status == "jumping") {
 			this.ypos += this.vely;
-			image(this.im3, this.xpos, this.ypos);
+      this.im = this.im3;
 			if (this.ypos >= 320) {
 				this.ypos = 320;
 				this.status = "walking";
 				this.vely = 0;
 			}
 		}
+    image(this.im, this.xpos, this.ypos);
 	}
 }
 
