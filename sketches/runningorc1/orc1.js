@@ -13,7 +13,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(320, 240);
+  myCanvas = createCanvas(320, 240);
+  myCanvas.parent("orc1")
   resetOrc()
   frameRate(30);
 }
@@ -30,5 +31,5 @@ function draw() {
 
 function resetOrc() {
   y = -48;
-  x = Math.random()*300;
+  x = random()*300
 }
