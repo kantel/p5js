@@ -4,7 +4,7 @@ let y;
 let dia = 30;
 
 function setup() {
-  createCanvas(440, 280);
+  createCanvas(520, 280);
   x = -dia;
   x1 = 0;
   y = height/2;
