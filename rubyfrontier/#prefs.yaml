@@ -1,6 +1,6 @@
 --- 
 :sitetitle: "P5js"
 :linkjavascripts: ["p5", "p5.dom"]
-:linkstylesheets: ["style"]
+:linkstylesheets: ["style", "pastie"]
 :permalink: true
 :kramdown: true

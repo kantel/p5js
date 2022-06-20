@@ -4,7 +4,6 @@
 
 
 <script type="text/javascript">
-
 let ball;
 
 function setup() {

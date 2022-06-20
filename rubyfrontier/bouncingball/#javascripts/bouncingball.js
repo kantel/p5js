@@ -1,5 +1,5 @@
 let balls = [];
-const numOfBalls = 30
+const numOfBalls = 50
 
 function setup() {
 	let myCanvas = createCanvas(640, 360);
