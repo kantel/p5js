@@ -1,77 +1,83 @@
 ---
-firssteps: &1
+firssteps:
   :path: !ruby/object:Pathname
-    path: firststep/firssteps.html
+    path: balloons/firssteps.html
   :adr: !ruby/object:Pathname
-    path: "/Users/admin/git/p5js/rubyfrontier/firststep/firssteps.txt"
+    path: "/Users/admin/git/p5js/rubyfrontier/balloons/firssteps.txt"
   :linetext: First Steps With P5
-first steps with p5: *1
-emoji: &2
+first steps with p5: &10
+  :path: !ruby/object:Pathname
+    path: balloons/balloons.html
+  :adr: !ruby/object:Pathname
+    path: "/Users/admin/git/p5js/rubyfrontier/balloons/balloons.txt"
+  :linetext: First Steps With P5
+emoji: &1
   :path: !ruby/object:Pathname
     path: emoji/emoji.html
   :adr: !ruby/object:Pathname
     path: "/Users/admin/git/p5js/rubyfrontier/emoji/emoji.txt"
   :linetext: First Emojis With P5
-first emojis with p5: *2
-rogue: &3
+first emojis with p5: *1
+rogue: &2
   :path: !ruby/object:Pathname
     path: rogue/rogue.html
   :adr: !ruby/object:Pathname
     path: "/Users/admin/git/p5js/rubyfrontier/rogue/rogue.txt"
   :linetext: Rogue with P5 (1)
-rogue with p5 (1): *3
-bouncingball: &4
+rogue with p5 (1): *2
+bouncingball: &3
   :path: !ruby/object:Pathname
     path: bouncingball/bouncingball.html
   :adr: !ruby/object:Pathname
     path: "/Users/admin/git/p5js/rubyfrontier/bouncingball/bouncingball.txt"
   :linetext: BouncingBall With P5
-bouncingball with p5: *4
-sidescroller1: &5
+bouncingball with p5: *3
+sidescroller1: &4
   :path: !ruby/object:Pathname
     path: sidescroller/sidescroller1.html
   :adr: !ruby/object:Pathname
     path: "/Users/admin/git/p5js/rubyfrontier/sidescroller/sidescroller1.txt"
   :linetext: A Basic Sidescroller (1)
-a basic sidescroller (1): *5
-sidescroller2: &6
+a basic sidescroller (1): *4
+sidescroller2: &5
   :path: !ruby/object:Pathname
     path: sidescroller/sidescroller2.html
   :adr: !ruby/object:Pathname
     path: "/Users/admin/git/p5js/rubyfrontier/sidescroller/sidescroller2.txt"
   :linetext: A Basic Sidescroller (2)
-a basic sidescroller (2): *6
+a basic sidescroller (2): *5
 a basic sidescroller (3):
   :path: !ruby/object:Pathname
     path: sidescroller/sidescroller2.html
   :adr: !ruby/object:Pathname
     path: "/Users/admin/git/p5js/rubyfrontier/sidescroller/sidescroller2.txt"
   :linetext: A Basic Sidescroller (3)
-video1: &7
+video1: &6
   :path: !ruby/object:Pathname
     path: video1/video1.html
   :adr: !ruby/object:Pathname
     path: "/Users/admin/git/p5js/rubyfrontier/video1/video1.txt"
   :linetext: Video-Wiedergabe in P5 (JavaScript)
-video-wiedergabe in p5 (javascript): *7
-coodectcircle: &8
+video-wiedergabe in p5 (javascript): *6
+coodectcircle: &7
   :path: !ruby/object:Pathname
     path: colldectcircle/coodectcircle.html
   :adr: !ruby/object:Pathname
     path: "/Users/admin/git/p5js/rubyfrontier/colldectcircle/coodectcircle.txt"
   :linetext: Circle Collision Detection mit P5
-circle collision detection mit p5: *8
-colldectrect: &9
+circle collision detection mit p5: *7
+colldectrect: &8
   :path: !ruby/object:Pathname
     path: colldectrect/colldectrect.html
   :adr: !ruby/object:Pathname
     path: "/Users/admin/git/p5js/rubyfrontier/colldectrect/colldectrect.txt"
   :linetext: Rectangle Collision Detection mit P5
-rectangle collision detection mit p5: *9
-sidescroller4: &10
+rectangle collision detection mit p5: *8
+sidescroller4: &9
   :path: !ruby/object:Pathname
     path: sidescroller/sidescroller4.html
   :adr: !ruby/object:Pathname
     path: "/Users/admin/git/p5js/rubyfrontier/sidescroller/sidescroller4.txt"
   :linetext: A Basic Sidescroller (4)
-a basic sidescroller (4): *10
+a basic sidescroller (4): *9
+balloons: *10

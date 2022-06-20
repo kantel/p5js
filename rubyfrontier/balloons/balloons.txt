@@ -1,0 +1,9 @@
+#title "First Steps With P5"
+#linkjavascripts ["balloons"]
+
+## Balloons
+
+<div id="myCanvas"></div>
+
+<% imageref("balloon1") %>
+
