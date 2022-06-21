@@ -1,9 +1,14 @@
-#title "First Steps With P5"
+#title "Hot Air Balloons With P5"
 #linkjavascripts ["balloons"]
 
-## Balloons
+## Hot Air Balloons
 
 <div id="myCanvas"></div>
 
-<% imageref("balloon1") %>
-
+<% imageref("balloon01") %>
+<% imageref("balloon02") %>
+<% imageref("balloon03") %>
+<% imageref("balloon04") %>
+<% imageref("balloon05") %>
+<% imageref("balloon06") %>
+<% imageref("background") %>

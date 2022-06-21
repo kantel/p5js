@@ -5,7 +5,7 @@ firssteps:
   :adr: !ruby/object:Pathname
     path: "/Users/admin/git/p5js/rubyfrontier/balloons/firssteps.txt"
   :linetext: First Steps With P5
-first steps with p5: &10
+first steps with p5:
   :path: !ruby/object:Pathname
     path: balloons/balloons.html
   :adr: !ruby/object:Pathname
@@ -80,4 +80,10 @@ sidescroller4: &9
     path: "/Users/admin/git/p5js/rubyfrontier/sidescroller/sidescroller4.txt"
   :linetext: A Basic Sidescroller (4)
 a basic sidescroller (4): *9
-balloons: *10
+balloons: &10
+  :path: !ruby/object:Pathname
+    path: balloons/balloons.html
+  :adr: !ruby/object:Pathname
+    path: "/Users/admin/git/p5js/rubyfrontier/balloons/balloons.txt"
+  :linetext: Hot Air Balloons With P5
+hot air balloons with p5: *10
