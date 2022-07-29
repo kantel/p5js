@@ -18,9 +18,7 @@ function draw() {
         ball[i].checkEdges();
         for (let j = 0; j < ball.length; j++) {
           if (i != j && ball[i].checkCollision(ball[j])) {
-            // ball[i].dir.x *= -1;
             ball[i].dir.y *= -1;
-            // ball[j].dir.x *= -1;
             ball[j].dir.y *= -1;
           }
          }
