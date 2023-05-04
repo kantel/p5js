@@ -11,7 +11,7 @@ class Robot {
     this.y = 440;
     this.bodyHeight = 160;  // Body Height
     this.neckHeight = 70;  // Neck Height
-    this.radius = 45
+    this.radius = 45;
     this.easing = 0.04;
     this.ny = this.y - this.bodyHeight - this.neckHeight - this.radius;  // Neck Y
   }
