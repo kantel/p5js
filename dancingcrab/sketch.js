@@ -130,7 +130,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  myCanvas = createCanvas(windowWidth, windowHeight);
+  myCanvas.parent("crab01");
   frameRate(fps);
   for (let i = 0; i < numBubbles; i++) {
     bubbles[i] = new Bubble;
