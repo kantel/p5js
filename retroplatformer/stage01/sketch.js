@@ -1,6 +1,6 @@
 // Retro Platformer Stage 1
 // Nach Mr. Erdreich: Creating a Retro-Style Platform Game in P5.js <https://www.youtube.com/playlist?list=PLBDInqUM5B26FjwMMZqGDxqQr1kX5V9Ul>, ca. 2020
-// Klassen und nach ES 6 angepaßt: Jörg Kantel, 2023
+// Klassen nach ES 6 angepaßt: Jörg Kantel, 2023
 
 // Konstanten
 const winwidth = 480;
