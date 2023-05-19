@@ -16,7 +16,7 @@ const platforms = [];
 class Player {
 
   constructor() {
-    this.x = 240;
+    this.x = 224;
     this.y = 146;
     this.w = 16;
     this.h = 32
@@ -66,14 +66,14 @@ function game() {
   push();
   noStroke();
   fill(100, 200, 75);  // Grasgrün
-  rect(width/2, height + 50, width, height);
+  rect(0, height - 50, width, height);
   pop();
   // Fensterrahmen
   push();
   noFill();
   stroke(0)   // Schwarz
   strokeWeight(7);
-  rect(width/2, height/2, width, height);
+  rect(0, 0, width, height);
   pop();
   // Platforms
   for (let platform of platforms) {
@@ -88,9 +88,9 @@ function game() {
 function setup() {
   createCanvas(winwidth, winheight);
   stage = 0;
-  rectMode(CENTER);
-  textAlign(CENTER);
-  platforms[0] = new Platform(128, 112, 128, 16);
+  // rectMode(CENTER);
+  // textAlign(CENTER);
+  platforms[0] = new Platform(65, 112, 128, 16);
   player = new Player;
 } // end setup()
 
