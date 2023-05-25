@@ -9,6 +9,7 @@ const winheight = 224;
 
 // Globale Variablen
 let stage;
+let player;
 const platforms = [];
 
 // Klassen
@@ -20,7 +21,8 @@ class Player {
     this.x = 240;
     this.y = 146;
     this.w = 16;
-    this.h = 32
+    this.h = 32;
+    this.speed = 5;
   } // End Player constructor()
 
   update() {
@@ -81,13 +83,25 @@ function game() {
     platform.display();
   }
   // Player
+  if (kb.pressing("left")) {
+    if (player.x > player.w) {
+      player.x -= player.speed;
+    }
+  } else if (kb.pressing("right")) {
+    if (player.x < width - player.w) {
+      player.x += player.speed;
+    }
+  } else {
+    player.x += 0;
+  }
   player.display();
 } // end game()
 // End Funktionen
 
 // Hauptprogramm
 function setup() {
-  createCanvas(winwidth, winheight);
+  myCanvas = createCanvas(winwidth, winheight);
+  myCanvas.parent("retro2");
   stage = 0;
   rectMode(CENTER);
   textAlign(CENTER);
@@ -100,5 +114,6 @@ function draw() {
     game();
   }
 } // end draw()
+
 // End Hauptprogramm
 
