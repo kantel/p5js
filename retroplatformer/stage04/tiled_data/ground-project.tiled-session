@@ -1,0 +1,67 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "platform01.tmx",
+    "expandedProjectPaths": [
+    ],
+    "exportAsImage.drawTileGrid": false,
+    "exportAsImage.includeBackgroundColor": false,
+    "exportAsImage.useCurrentScale": false,
+    "exportAsImage.visibleLayersOnly": false,
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "Terrain (16x16).tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "ground.tmx": {
+            "scale": 1.21,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 314.46280991735534,
+                "y": 19.008264462809905
+            }
+        },
+        "platform01.tmx": {
+            "scale": 9.71375,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 40.09779951100245,
+                "y": 16.059709175138334
+            }
+        }
+    },
+    "last.imagePath": "/Users/admin/git/p5js/retroplatformer/stage04/tiled_data",
+    "map.fixedSize": true,
+    "map.height": 2,
+    "map.lastUsedFormat": "tmx",
+    "map.orientation": 1,
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 5,
+    "openFiles": [
+        "ground.tmx",
+        "Terrain (16x16).tsx",
+        "platform01.tmx"
+    ],
+    "project": "ground-project.tiled-project",
+    "recentFiles": [
+        "ground.tmx",
+        "Terrain (16x16).tsx",
+        "platform01.tmx"
+    ],
+    "tileset.embedInMap": false,
+    "tileset.lastUsedFilter": "All Files (*)",
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.margin": 0,
+    "tileset.spacing": 0,
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    },
+    "tileset.transparentColor": "#ff00ff",
+    "tileset.type": 0,
+    "tileset.useTransparentColor": false
+}
