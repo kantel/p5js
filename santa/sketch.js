@@ -7,7 +7,7 @@ const canvasHeight = 400;   // 315
 let w = canvasWidth;
 let h0 = 150;               // Schlittenhöhe
 let f1 = 60;                // Frequenz
-let h1 = 35;                // Schwinung
+let h1 = 35;                // Schwingung
 let snowflakes = [];        // Schnee-Array
 let n = 30;                 // Anzahl Schneeflocken
 let bg;
