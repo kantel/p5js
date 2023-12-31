@@ -34,6 +34,6 @@ function draw() {
     if (particles[i].isNotAlive()) {
       particles.splice(i, 1);
      }
-    print(particles.length);
+    // print(particles.length);
   }
 }
