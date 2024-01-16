@@ -20,7 +20,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  myCanvas = createCanvas(windowWidth, windowHeight);
+  myCanvas.parent("sketch");
   frameRate(fps);
   back1 = new Background(0, 0, bg1);
   back2 = new Background(bgWidth, 0, bg2);

@@ -1,5 +1,4 @@
 // Class Plane
-
 class Plane {
 
     constructor() {
@@ -43,7 +42,6 @@ class Plane {
 }
 
 // Class Enemy
-
 class Enemy {
 
     constructor(_x, _y, _im) {
