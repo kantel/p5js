@@ -13,3 +13,16 @@ function isRectCollision(self, other) {
   }
   return false;
 }
+
+function displayHUD() {
+  let hud1 = ("Score: " + plane.score);
+  let hud2 = ("Lives: " + plane.lives);
+  push();
+  stroke(0);
+  strokeWeight(1);
+  fill(200, 10, 10);
+  textSize(36);
+  text(hud1, 20, 40);
+  text(hud2, 250, 40);
+  pop();
+}

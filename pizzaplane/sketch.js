@@ -33,8 +33,8 @@ function setup() {
   back1 = new Background(0, 0, bgImage);
   back2 = new Background(bgWidth, 0, bgImage);
   for (let i = 0; i < noPizzas; i++) {
-    let x = width + random(30, 100);
-    let y = random(10, height - 100);
+    let x = width + random(300, 600);
+    let y = random(40, height - 100);
     pizzas[i] = new Enemy(x, y, pizzaImg);
   }
   plane = new Plane();
@@ -60,17 +60,10 @@ function draw() {
   plane.update();
   plane.display();
   displayHUD();
+
+  if (plane.lives < 0 || plane.score < 0) {
+    print("Game Over!");
+    noLoop();
+  }
 }
 
-function displayHUD() {
-  let hud1 = ("Score: " + plane.score);
-  let hud2 = ("Lives: " + plane.lives);
-  push();
-  stroke(0);
-  strokeWeight(1);
-  fill(200, 10, 10);
-  textSize(36);
-  text(hud1, 20, 40);
-  text(hud2, 250, 40);
-  pop();
-}

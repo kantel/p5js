@@ -18,7 +18,7 @@ class Missile {
       for (let pizza of pizzas) {
         if (isRectCollision(this, pizza)) {
             pizza.reset();
-            missiles.splice(-1);
+            missiles.shift();
             let hit = new Explosion(this.x, this.y - 20);
             hits.push(hit);
             plane.score += 10;

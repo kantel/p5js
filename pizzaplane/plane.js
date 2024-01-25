@@ -18,7 +18,7 @@ class Plane {
     update() {
       if (keyIsPressed) {
         if (keyCode == UP_ARROW) {
-          if (this.y > 10) {
+          if (this.y > 40) {
             this.y -= this.speed;
           }
         }
