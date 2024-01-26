@@ -21,16 +21,19 @@ class Plane {
           if (this.y > 40) {
             this.y -= this.speed;
           }
+          return false;
         }
         if (keyCode == DOWN_ARROW) {
           if (this.y < height - 100) {
             this.y += this.speed;
           }
+          return false;
       }
       if (keyCode == RIGHT_ARROW) {
         this.fire();
+        return false;
       }
-      return false;
+  
     }
     this.anim += 1;
     if (this.anim >= maxAnim) {
