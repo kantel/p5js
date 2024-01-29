@@ -9,6 +9,7 @@ class Plane {
       this.h = this.img.height;
       this.frame = 0;
       this.speed = 5
+      this.dir = "NONE";
       this.anim  = 0;
       this.firecount = 0;
       this.score = 0;
@@ -16,24 +17,15 @@ class Plane {
     }
   
     update() {
-      if (keyIsPressed) {
-        if (keyCode == UP_ARROW) {
-          if (this.y > 40) {
-            this.y -= this.speed;
-          }
-          return false;
+      if (this.dir === "NONE") {
+        this.y += 0;
+      }
+      else if (this.dir === "UP") {
+        if (this.y > 40) {
+          this.y += this.speed;
         }
-        if (keyCode == DOWN_ARROW) {
-          if (this.y < height - 100) {
-            this.y += this.speed;
-          }
-          return false;
       }
-      if (keyCode == RIGHT_ARROW) {
-        this.fire();
-        return false;
-      }
-    }
+ 
     this.anim += 1;
     if (this.anim >= maxAnim) {
       this.anim = 0;

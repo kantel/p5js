@@ -67,3 +67,19 @@ function draw() {
   }
 }
 
+function mousePressed() {
+  if (mouseButton === LEFT) {
+    plane.dir = "UP";
+  }
+  else if (mouseButton === RIGHT) {
+    plane.dir = "DOWN";
+  }
+  else if (mouseButton === CENTER) {
+    plane.fire();
+  }
+  return false;
+}
+
+function mouseReleased() {
+  plane.dir = "NONE";
+}
