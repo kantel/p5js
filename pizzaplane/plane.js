@@ -22,10 +22,14 @@ class Plane {
       }
       else if (this.dir === "UP") {
         if (this.y > 40) {
+          this.y -= this.speed;
+        }
+      }
+      else if (this.dir === "DOWN") {
+        if (this.y < height - 100) {
           this.y += this.speed;
         }
       }
- 
     this.anim += 1;
     if (this.anim >= maxAnim) {
       this.anim = 0;

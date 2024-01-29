@@ -67,19 +67,19 @@ function draw() {
   }
 }
 
-function mousePressed() {
-  if (mouseButton === LEFT) {
+function keyPressed() {
+  if (keyCode === UP_ARROW) {
     plane.dir = "UP";
   }
-  else if (mouseButton === RIGHT) {
+  else if (keyCode === DOWN_ARROW) {
     plane.dir = "DOWN";
   }
-  else if (mouseButton === CENTER) {
+  else if (keyCode === RIGHT_ARROW) {
     plane.fire();
   }
   return false;
 }
 
-function mouseReleased() {
+function keyReleased() {
   plane.dir = "NONE";
 }
