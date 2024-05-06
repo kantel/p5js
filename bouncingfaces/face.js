@@ -8,7 +8,8 @@ class Face {
     let velx = random(-3, 3);
     let vely = random(-3, 3);
     this.vel = createVector(velx, vely);
-    const faceImages = [face01, face02, face03];
+    const faceImages = [face01, face02, face03, face04, face05, face06,
+                        face07, face08, face09, face10, face11, face12];
     this.im = random(faceImages);
   }
 
