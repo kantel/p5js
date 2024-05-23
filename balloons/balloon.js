@@ -4,14 +4,13 @@ class Balloon {
   }
 
   reset() {
-    this.w = random(72, 144);
+    this.w = random(60, 120);
     let x = random(width - this.w);
     let y = random(height + 100, height + 400);
     this.loc = createVector(x, y);
     let velx = random(-0.5, 0.5);
     let vely = random(-4, -1);
     this.vel = createVector(velx, vely);
-    let balloonImages = [b0, b1, b2, b3, b4, b5, b6, b7];
     this.im = random(balloonImages);
   }
   

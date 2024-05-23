@@ -1,18 +1,15 @@
 let bg;
 let alice;
+let balloonImages = [];
 let balloons = [];
 const numBalloons = 20;
 
 function preload() {
+  for (let i = 0; i < 8; i++) {
+    let balloonName = "data/balloon" + i + ".png";
+    balloonImages[i] = loadImage(balloonName);
+  }
   bg = loadImage("data/landscape.png");
-  b0 = loadImage("data/balloon0.png");
-  b1 = loadImage("data/balloon1.png");
-  b2 = loadImage("data/balloon2.png");
-  b3 = loadImage("data/balloon3.png");
-  b4 = loadImage("data/balloon4.png");
-  b5 = loadImage("data/balloon5.png");
-  b6 = loadImage("data/balloon6.png");
-  b7 = loadImage("data/balloon7.png");
   alice = loadImage("data/alice.png");
 }
 
