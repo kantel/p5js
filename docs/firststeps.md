@@ -1,4 +1,4 @@
-# Erste Schritte mit p5.js
+# Erste Schritte mit P5.js
 
 Natürlich kann man Programme für p5.js auch mit der Processing-ähnlichen Mini-IDE erstellen (noch beta), aber um so richtig alle Möglichkeiten der DOM-Manipulation auszunutzen, ist es sinnvoller, mit einer HTML5-Datei, den notwendigen JavaScript- und eventuell noch ein paar CSS-Dateien zu arbeiten. Lädt man sich p5.js herunter, wird auch ein Ordner `empty-example` mit heruntergeladen, der als Ausgangspunkt für eigene Expermente dienen kann. Dieser Ordner enthält:
 

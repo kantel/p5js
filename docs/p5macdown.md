@@ -1,4 +1,4 @@
-<script src="js/p5.min.js" type="text/javascript" ></script>
+<script src="./js/p5.min.js" type="text/javascript" ></script>
 
 # P5.js und MacDown
 

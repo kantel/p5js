@@ -1,8 +1,8 @@
-site_name: P5.js lernen
+site_name: P5.js in Beispielen
 theme: readthedocs
 dev_addr: 127.0.0.1:9030
 
-pages:
+nav:
 - Home: "index.md"
 - Erste Schritte: "firststeps.md"
 - Klassen in ES 6: "classes.md"
@@ -15,6 +15,7 @@ pages:
     - P5.js und RubyFrontier: "p5rubyfrontier.md"
     - RubyFrontier als P5.js-IDE: "p5rubyfrontieride.md"
     - Zwei Canvases mit P5.js: "p52canvases.md"
+    - P5 mit MacDown: "p5macdown.md"
 
 markdown_extensions:
 - footnotes
@@ -32,7 +33,3 @@ extra_css: [css/user.css]
 
 extra_javascript:
     - js/p5.min.js
-    - js/p5.dom.min.js
-    - js/p5.sound.min.js
-
-google_analytics: ["UA-89422194-1", "auto"]

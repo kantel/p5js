@@ -45,7 +45,7 @@ class Ball {
 }
 ~~~
 
-Das ist JavaScript, wie ich es bisher zumindest noch nicht kannte. Es gibt einen Konstruktor, der tatsächlich auch so heißt (`constructor()`) und die Methoden der Klasse werden ohne `function()` definiert. Zwei Methoden sind für die Darstellung zuständig -- ich habe sie aus ([Processing.py](cp^processing.py)-) Gewohnheit `update()` und `display()` genannt und eine dritte Methode (`checkEdges()`) sorgt dafür, daß der Ball den Canvas nicht verläßt.
+Das ist JavaScript, wie ich es bisher zumindest noch nicht kannte. Es gibt einen Konstruktor, der tatsächlich auch so heißt (`constructor()`) und die Methoden der Klasse werden ohne `function()` definiert. Zwei Methoden sind für die Darstellung zuständig -- ich habe sie aus (Processing.py Gewohnheit `update()` und `display()` genannt und eine dritte Methode (`checkEdges()`) sorgt dafür, daß der Ball den Canvas nicht verläßt.
 
 Damit kann man schon ein einfaches Programm schreiben, das ein Bällchen über die Leinwand hüpfen läßt:
 
