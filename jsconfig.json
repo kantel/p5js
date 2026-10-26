@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6"
+  },
+  "include": [
+    "*.js",
+    "**/*.js",
+    "/Users/kantel/.vscode-oss/extensions/wmcicompsci.cs30-p5-1.9.7-universal/p5types/global.d.ts",
+    "/Users/kantel/.vscode-oss/extensions/wmcicompsci.cs30-p5-1.9.7-universal/p5types/p5.sound.d.ts",
+    "/Users/kantel/.vscode-oss/extensions/wmcicompsci.cs30-p5-1.9.7-universal/p5types/p5.sound.global.d.ts"
+  ]
+}
