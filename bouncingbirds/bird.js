@@ -1,7 +1,7 @@
 class Bird {
 
     constructor() {
-        this.r = random(8, 16);
+        this.r = random(10, 16);
         this.d = 2*this.r;
         let x = random(this.d, width - this.d);
         let y = random(this.d, height - this.d);
