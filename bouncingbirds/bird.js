@@ -44,10 +44,12 @@ class Bird {
             this.pos.add(dist);
             other.pos.sub(dist);
             // Swap the velocity of the colliding birds
-            this.vel.x *= -1;
-            this.vel.y *= -1
-            other.vel.x *= -1;
-            other.vel.y *= -1;
+            let tempX = other.vel.x;
+            let tempY = other.vel.y;
+            other.vel.x = this.vel.x;
+            other.vel.y = this.vel.y;
+            this.vel.x = tempX;
+            this.vel.y = tempY;
          }
     }
 

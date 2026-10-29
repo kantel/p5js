@@ -7,18 +7,19 @@ let img;
 async function setup() {
 
     // load the bird images
-    img = await loadImage("/assets/chick.png");
+    img = await loadImage("assets/chick.png");
     birdsIm.push(img);
-    img = await loadImage("/assets/chicken.png");
+    img = await loadImage("assets/chicken.png");
     birdsIm.push(img);
-    img = await loadImage("/assets/duck.png");
+    img = await loadImage("assets/duck.png");
     birdsIm.push(img);
-    img = await loadImage("/assets/owl.png");
+    img = await loadImage("assets/owl.png");
     birdsIm.push(img);
-    img = await loadImage("/assets/parrot.png");
+    img = await loadImage("assets/parrot.png");
     birdsIm.push(img);
-    img = await loadImage("/assets/penguin.png");
+    img = await loadImage("assets/penguin.png");
     birdsIm.push(img);
+    // console.log("Alle Bilder geladen.");
 
     createCanvas(640, 400);
     // canvas = createCanvas(640, 400);   // für das Einbinden
