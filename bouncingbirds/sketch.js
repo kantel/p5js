@@ -2,23 +2,16 @@ let numBirds = 25;
 let birds = [];
 let birdsIm = [];
 
-let img;
-
 async function setup() {
 
     // load the bird images
-    img = await loadImage("assets/chick.png");
-    birdsIm.push(img);
-    img = await loadImage("assets/chicken.png");
-    birdsIm.push(img);
-    img = await loadImage("assets/duck.png");
-    birdsIm.push(img);
-    img = await loadImage("assets/owl.png");
-    birdsIm.push(img);
-    img = await loadImage("assets/parrot.png");
-    birdsIm.push(img);
-    img = await loadImage("assets/penguin.png");
-    birdsIm.push(img);
+    let chick = await loadImage("assets/chick.png");
+    let chicken = await loadImage("assets/chicken.png");
+    let duck = await loadImage("assets/duck.png");
+    let owl = await loadImage("assets/owl.png");
+    let parrot = await loadImage("assets/parrot.png");
+    let penguin = await loadImage("assets/penguin.png");
+    birdsIm = [chick, chicken, duck, owl, parrot, penguin]
     // console.log("Alle Bilder geladen.");
 
     createCanvas(640, 400);
@@ -29,7 +22,7 @@ async function setup() {
 }
 
 function draw() {
-    background(234, 218, 184);
+    background(57, 92, 152);
     for (let i = 0; i < numBirds; i++) {
         for (let j = i + 1; j < numBirds; j++) {
             birds[i].collisionDetection(birds[j]); 
