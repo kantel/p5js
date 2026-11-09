@@ -9,7 +9,6 @@ function setup() {
     createCanvas(WIDTH, HEIGHT);         
     // canvas = createCanvas(640, 400);  // für das Einbinden
     // canvas.parent("myCanvas");        // in diese Webseite
-    saveSVG("randcircle.svg")
 }
 
 function draw() {
@@ -41,6 +40,7 @@ function randomCircles() {
         circle(x, y, 2*radius)
     }
     // Aufnahme beenden und speichern
+    save("mein-sketch.png"); 
     console.log("After Save");
     running = false;
 }

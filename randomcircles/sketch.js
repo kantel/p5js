@@ -36,6 +36,9 @@ function randomCircles() {
         radius = random(14, 40);
         circle(x, y, 2*radius)
     }
+    // draw() anhalten und Frame speichern
+    save("randomcircles.png"); 
+    console.log("After Save");
     running = false;
 }
 
